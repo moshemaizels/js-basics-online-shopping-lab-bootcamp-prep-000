@@ -72,7 +72,7 @@ function removeFromCart(item) {
        if (obj.hasOwnProperty(item) === true) {
          cart.splice(i, 1)
          return cart
-         
+
        }
 
     }
@@ -84,6 +84,6 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
   if (cardNumber === undefined) {
-    
+    console.log("Sorry we don't have a credit card on file for you")
   }
 }
