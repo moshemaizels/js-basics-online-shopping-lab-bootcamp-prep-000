@@ -69,7 +69,7 @@ function removeFromCart(item) {
     for (var i = 0; i < cart.length; i++) {
       var obj = cart[i]
        if (obj.hasOwnProperty(item) === true) {
-         
+         cart.splice(i, 1)
          //console.log(item + "exists")
        }
     }
