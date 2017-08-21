@@ -38,9 +38,11 @@ function viewCart() {
       if (i + 1 === cart.length) {
         cartView = cartView + ` and ${objKey} at $${obj[objKey]}.`
         console.log(cartView)
-      } else {
+      } if(cart.length != 2) {
         cartView = cartView + ` ${objKey} at $${obj[objKey]},`
 
+      } else {
+        cartView = cartView + ` ${objKey} at $${obj[objKey]}`
       }
     }
   }
