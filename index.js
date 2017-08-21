@@ -72,7 +72,7 @@ function removeFromCart(item) {
        if (obj.hasOwnProperty(item) === true) {
          cart.splice(i, 1)
          return cart
-         //console.log(item + "exists")
+         
        }
 
     }
