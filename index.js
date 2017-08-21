@@ -39,7 +39,7 @@ function viewCart() {
         cartView = cartView + `and ${objKey} at $${obj[objKey]}.`
         console.log(cartView)
       } else {
-        cartView = cartView ` ${objKey} at $${obj[objKey]}, `
+        cartView = cartView + ` ${objKey} at $${obj[objKey]}, `
 
       }
     }
