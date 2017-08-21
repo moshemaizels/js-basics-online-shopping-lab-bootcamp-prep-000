@@ -50,6 +50,14 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var totalPrice = 0
+  for (var i = 0; i < cart.length; i++) {
+    var obj = cart[i]
+    var objKey = Object.keys(cart[i])
+    var price = parseInt(obj[objKey])
+    console.log(price)
+    
+  }
 }
 
 function removeFromCart(item) {
