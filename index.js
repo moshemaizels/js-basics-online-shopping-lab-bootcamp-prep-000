@@ -55,9 +55,10 @@ function total() {
     var obj = cart[i]
     var objKey = Object.keys(cart[i])
     var price = parseInt(obj[objKey])
-    console.log(price)
-    
+    totalPrice += price
+
   }
+  return totalPrice
 }
 
 function removeFromCart(item) {
