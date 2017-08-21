@@ -22,14 +22,14 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  var cartView = "In your cart,"
+  var cartView = "In your cart, you have"
   if (cart.length == 0) {
     console.log("Your shopping cart is empty.")
 
   } if (cart.length == 1) {
     var obj = cart[0]
     var objKey = Object.keys(cart[0])
-    console.log(cartView + ` you have ${objKey} at $${obj[objKey]}.`)
+    console.log(cartView + ` ${objKey} at $${obj[objKey]}.`)
 
   } else {
     for (var i = 0; i < cart.length; i++) {
@@ -39,8 +39,8 @@ function viewCart() {
         cartView = cartView + `and ${objKey} at $${obj[objKey]}.`
         console.log(cartView)
       } else {
-      
-        
+        cartView = cartView ` ${objKey} at $${obj[objKey]}, `
+
       }
     }
   }
