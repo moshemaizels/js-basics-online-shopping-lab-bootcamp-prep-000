@@ -83,7 +83,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
-  if (cardNumber === undefined || cardNumber === null) {
+  if (cardNumber === undefined || cardNumber === null || typeof cardNumber === "string") {
     console.log("Sorry we don't have a credit card on file for you")
   } else {
     var totalPrice = total()
