@@ -33,11 +33,13 @@ function viewCart() {
 
   } else {
     for (var i = 0; i < cart.length; i++) {
-      if (cart.length + 1 === cart.length) {
+      if (i + 1 === cart.length) {
         var obj = cart[i]
         var objKey = Object.keys(cart[i])
-        cartView = cartView + `and ${objKey} at $${obj[objKey].}`
+        cartView = cartView + `and ${objKey} at $${obj[objKey]}.`
         console.log(cartView)
+      } else {
+        var obj = cart[i]
       }
     }
   }
