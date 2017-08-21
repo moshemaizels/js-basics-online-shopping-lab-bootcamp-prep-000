@@ -36,10 +36,10 @@ function viewCart() {
       var obj = cart[i]
       var objKey = Object.keys(cart[i])
       if (i + 1 === cart.length) {
-        cartView = cartView + `and ${objKey} at $${obj[objKey]}.`
+        cartView = cartView + ` and ${objKey} at $${obj[objKey]}.`
         console.log(cartView)
       } else {
-        cartView = cartView + ` ${objKey} at $${obj[objKey]}, `
+        cartView = cartView + ` ${objKey} at $${obj[objKey]},`
 
       }
     }
